@@ -1,11 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/', function(req, res, next) {
-  res.json({ message: 'pruebita' });
-});
-
-router.get('/search', (req,res) =>{
+router.get('/', (req, res, next) =>{
   start=req.query.start
   end=req.query.end
   key=req.query.key
